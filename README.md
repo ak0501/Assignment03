@@ -1,4 +1,4 @@
-# Assignment03
+# Random Password Generator
 Random Password Generator
 The generator works the following way;
 #The browser asks the user to enter the length of desigred password.
