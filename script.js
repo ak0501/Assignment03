@@ -45,12 +45,14 @@ function writePassword(length, use_upper, use_lower, use_number, use_sp_chars) {
 }
 // Press the generate password button to ask the length of the password
 document.getElementById("generate").addEventListener("click", function () {
-  var input;
-  input = prompt("enter the password length");
-  if (input === null) {
+  var numLength;
+  numLength = prompt("enter the password length");
+  if (numLength === null) {
     return;
-  } 
-  
+  } else if (numLength === "") {
+    prompt("please enter your password length");
+    return numLength;
+  } else if (numLength !== null) {
     //prompt if they want upper case letters
     var use_upper = confirm("Do you want uppercase letters?");
     //prompt if they want lowercase letters
