@@ -7,14 +7,12 @@ function generatePassword(length, use_upper, use_lower, use_number, use_sp_chars
       var lowercaseChars = 'abcdefghijklmnopqrstuvwxyz';
       var numbers = '1234567890';
       var specialChars = '!@#$%^&*()_+~`|}{[]\\:;?><,./-="';
-
       var charactersUsed = '';
       var password = '';
       if (use_upper) charactersUsed += uppercaseLetters;
       if (use_lower) charactersUsed += lowercaseChars;
       if (use_number) charactersUsed += numbers;
       if (use_sp_chars) charactersUsed += specialChars;
-
       for (var i = 0; i < length; i++) {
         password += charactersUsed.charAt(Math.floor(Math.random() * charactersUsed.length));
       }
@@ -24,21 +22,13 @@ function generatePassword(length, use_upper, use_lower, use_number, use_sp_chars
     }
   }
 }
-
 //Call the function
-
 function writePassword(length, use_upper, use_lower, use_number, use_sp_chars) {
-
 // store the return variable from the function
-  
   var password = generatePassword(length, use_upper, use_lower, use_number, use_sp_chars);
-
   // Paste the return value to the text box in password field
   document.getElementById('password').innerHTML = password;
 }
-
-
-
 // Press the generate password button to ask the length of the password
 document.getElementById("generate").addEventListener("click", function () {
   var length = prompt("enter the password length");
@@ -51,5 +41,4 @@ document.getElementById("generate").addEventListener("click", function () {
   //prompt if they want special characters
   var use_sp_chars = confirm("Do you want special characters?");
   writePassword(length, use_upper, use_lower, use_number, use_sp_chars);
-
 });
