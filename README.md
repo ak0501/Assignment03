@@ -8,3 +8,4 @@ ___
 ![screenshot](password%20generator.jpg)
 
 **Tools Used**
+HTML | CSS | Javascript
