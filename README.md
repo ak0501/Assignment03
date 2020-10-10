@@ -2,6 +2,7 @@
 ---
 **overview**
 
-![screenshot](password%20generator.jpg)
+This simple web application can be used to generate secure password.
+___ 
 
-This app uses javascript to generate user defined password
+![screenshot](password%20generator.jpg)
