@@ -3,8 +3,6 @@
 **overview**
 
 As more and more users create online accounts , it is very important to provide strong password for account protection. This simple web application uses a series of conditions which the users can choose to create a secure passwordwithout having to come up with one by themself.
-
-can be used to generate secure password.
 ___ 
 
 **Using The App**
